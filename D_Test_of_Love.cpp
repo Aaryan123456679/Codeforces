@@ -20,8 +20,8 @@ int main() {
                 dp[i] = max(dp[i], dp[i - 1] - 1);
         }
         if (dp[n + 1] >= 0) 
-            cout << "YES\n";
+            cout << "YES" << endl;
         else 
-            cout << "NO\n";
+            cout << "NO" << endl;
     }
 }

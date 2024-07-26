@@ -23,8 +23,7 @@ int main(){
             if(vec.count(num) == 0) dkWhy.push_back(num);
             vec.insert(num);
         }
-        sort(dkWhy.begin(), dkWhy.end());
-        reverse(dkWhy.begin(), dkWhy.end());
+        sort(dkWhy.rbegin(), dkWhy.rend());
         
         int cur = 0, newNum;
 

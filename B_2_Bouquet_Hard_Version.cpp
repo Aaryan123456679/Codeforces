@@ -26,7 +26,7 @@ void solve(){
 		ck = max(0ll, ck - min(ac, c));
 		mn = min(mn, ck);
 	}
-	cout << k-mn << "\n";
+	cout << k-mn << endl;
 }
  
 int32_t main(){
