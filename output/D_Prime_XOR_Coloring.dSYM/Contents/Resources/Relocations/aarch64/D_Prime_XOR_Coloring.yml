@@ -1,0 +1,8 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/aaryanmahajan/Desktop/Komder/Competitive_Programming_Folder/output/D_Prime_XOR_Coloring'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003EBC, symSize: 0xA0 }
+  - { offsetInCU: 0x6974, offset: 0x6974, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003EBC, symSize: 0xA0 }
+  - { offsetInCU: 0x6A44, offset: 0x6A44, size: 0x8, addend: 0x0, symName: __ZNSt3__19basic_iosIcNS_11char_traitsIcEEE3tieB8ue170006EPNS_13basic_ostreamIcS2_EE, symObjAddr: 0xA0, symBinAddr: 0x100003F5C, symSize: 0x2C }
+...

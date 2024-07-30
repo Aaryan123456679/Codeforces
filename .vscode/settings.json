@@ -2,6 +2,19 @@
     "files.associations": {
         "iostream": "cpp",
         "ios": "cpp",
-        "set": "cpp"
-    }
+        "set": "cpp",
+        "vector": "cpp"
+    },
+    "cSpell.words": [
+        "graphmap",
+        "graphmapwith",
+        "graphwith",
+        "sortasc",
+        "sortdes",
+        "umii",
+        "unmp",
+        "vint",
+        "vpii",
+        "vvint"
+    ]
 }
