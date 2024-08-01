@@ -3,7 +3,8 @@
         "iostream": "cpp",
         "ios": "cpp",
         "set": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "queue": "cpp"
     },
     "cSpell.words": [
         "graphmap",
