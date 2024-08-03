@@ -39,51 +39,25 @@ int main() {
         // Your code here 
         int n ;
         cin >> n;
-        vint a(n);
+        vint a(n+1);
+        int prev , cur;
 
-        for(int i = 0 ; i < n ; i++) cin >> a[i];
+        for(int i = 1; i <= n ; i++){
+            cin >> cur;
+            if(cur != prev) a[i] = i-1;
+            else a[i] = a[i-1];
+
+            prev = cur;
+        }
 
         int q;
         cin >> q;
 
-        vint front, back;
-
-        for(int i = 0; i < n-1; i++){
-            int j = i+1;
-            while( j < n && a[i] == a[j]) j++;
-            if(j != n){back.push_back(i); front.push_back(j);}
-
-            i = j-1;
-        }
-
         for(int i = 0 ; i < q ; i++){
             int l,r;
             cin >> l >> r;
-            l--;r--;
-
-            int backBound = lower_bound(back.begin(), back.end(), l) - back.begin();
-            int frontBound = lower_bound(back.begin(), back.end(), r) - back.begin(); 
-
-            if(backBound >= back.size()) {
-                cout << -1 << " " << -1 << endl;
-            }else if(frontBound >= back.size()){
-                if( front[backBound] > r || back[backBound] < l){
-                    cout << -1 << ' ' << -1 << endl;
-                }else{
-                    cout << back[backBound]+1 << ' ' << front[backBound]+1 << endl;
-                }
-            }else{
-                int first = -1 , second = -1;
-                for(int i = backBound ; i < frontBound + 1 ; i++){
-                    if(back[i] >= l && front[i] <= r){
-                        first = back[i] + 1;
-                        second = front[i] + 1;
-                        break;
-                    }
-                }
-
-                cout << first << ' ' << second << endl;
-            }
+            if(a[r] >= l ) cout << a[r]  << ' ' << r << endl;
+            else cout << "-1 -1" << endl;
         }
 
         cout << endl;
