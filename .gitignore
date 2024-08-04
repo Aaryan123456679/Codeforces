@@ -1,1 +1,5 @@
 *.bin
+*.cph
+*.vscode
+*.excalidraw
+bits
