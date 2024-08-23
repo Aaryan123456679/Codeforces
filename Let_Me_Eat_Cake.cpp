@@ -1,0 +1,52 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll signed long long int
+#define vvint vector<vector<int> >
+#define vint vector<int>
+#define vll vector<ll>
+#define pii pair<int, int>
+#define pll pair<ll, ll>
+#define mii map<int,int>
+#define umii unordered_map<int,int>
+#define all(x) x.begin,x.end
+#define sortasc(x) sort(all(x))
+#define rev(x) reverse(all(x))
+#define sortdes(x) sort(x.rbegin(), x.rend())
+#define PI 3.1415926535897932384626
+#define graphmap unordered_map<int,vint>
+#define graph vector<vector<int> >
+#define graphmapwithEdge unordered_map<int,pair<int,int> >
+#define graphwithEdge vector<pii>
+#define F first
+#define S second
+#define mp make_pair
+
+
+// Your definitions here
+
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+    // declare global data structures here 
+
+    int t;
+    cin >> t;
+
+    while(t--){
+        int A,B;
+        cin >> A >> B;
+
+        int answer = 0;
+
+        while(A != B){
+            if(A > B) {answer += A/2 + (A&1); A = A/2;}
+            else {answer += B/2 + (B&1) ; B = B/2 ;}
+        }
+
+        cout << answer << endl;
+    }
+    return 0;
+}
